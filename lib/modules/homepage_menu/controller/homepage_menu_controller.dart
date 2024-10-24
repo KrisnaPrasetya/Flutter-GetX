@@ -1,4 +1,5 @@
 
+import 'package:flutter_getx/core/routes/app_routes.dart';
 import 'package:get/get.dart';
 
 class HomepageMenuController extends GetxController {
@@ -13,4 +14,14 @@ class HomepageMenuController extends GetxController {
     super.onClose();
   }
   
+  void gotoLowongan() {
+    Get.toNamed(AppRoutes.lowongan);
+  }
+  void gotoNotifikasi() {
+    Get.toNamed(AppRoutes.notifikasi);
+  }
+  void gotoDaftarKandidat() {
+    Get.toNamed(AppRoutes.datarKandidat);
+  }
+
 }

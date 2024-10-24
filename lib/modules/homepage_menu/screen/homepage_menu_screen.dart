@@ -13,14 +13,30 @@ class HomepageMenuScreen extends StatelessWidget {
       builder: (controller) {
         return Scaffold(
           appBar: AppBar(
+            backgroundColor: Colors.white,
             title: const Text('Homepage Menu'),
           ),
-          body: Column(
+          backgroundColor: Colors.white,
+          body: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
-                decoration: BoxDecoration(color: Colors.red),
-                child: Text("hello 1"),
-              )
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                    onPressed: controller.gotoNotifikasi,
+                    child: Text('Go to Notifikasi'),
+                  ),
+                  ElevatedButton(
+                    onPressed: controller.gotoDaftarKandidat,
+                    child: Text('Go to Daftar Kandidat'),
+                  ),
+                  ElevatedButton(
+                    onPressed: controller.gotoLowongan,
+                    child: Text('Go to Lowongan'),
+                  ),
+                ],
+              ),
             ],
           ),
         );

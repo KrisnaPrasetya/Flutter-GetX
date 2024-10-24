@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -13,7 +12,7 @@ class BaseApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: AppRoutes.homeMenu,
-      title: 'Aplikasi Pembelajaran Matematika',
+      title: 'Aplikasi test',
       getPages: AppPages.pages,
     );
   }
