@@ -1,0 +1,30 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '../controller/post_testing_controller.dart';
+
+class PostTestingScreen extends StatelessWidget {
+  const PostTestingScreen({super.key});
+
+@override
+  Widget build(BuildContext context) {
+    return GetBuilder<PostTestingController>(
+      init: PostTestingController(),
+      builder: (controller) {
+        return Scaffold(
+          appBar: AppBar(
+            title: const Text('Homepage Menu'),
+          ),
+          body: Column(
+            children: [
+              Container(
+                decoration: BoxDecoration(color: Colors.red),
+                child: Text("hello 1"),
+              )
+            ],
+          ),
+        );
+      },
+    );
+  }
+}

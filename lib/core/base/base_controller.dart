@@ -1,7 +1,7 @@
 
 import 'package:get/get.dart';
 
-import '../../modules/homepage_menu/controller/homepage_menu_controller.dart';
+import '../../module/homepage_menu/controller/homepage_menu_controller.dart';
 
 class BaseController {
   static initialize() {

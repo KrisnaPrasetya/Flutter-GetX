@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx/module/get_test/controller/get_testing_controller.dart';
 import 'package:get/get.dart';
 
-import '../controller/homepage_menu_controller.dart';
-
-class HomepageMenuScreen extends StatelessWidget {
-  const HomepageMenuScreen({super.key});
+class GetTestingScreen extends StatelessWidget {
+  const GetTestingScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<HomepageMenuController>(
-      init: HomepageMenuController(),
+    return GetBuilder<GetTestingController>(
+      init: GetTestingController(),
       builder: (controller) {
         return Scaffold(
           appBar: AppBar(
@@ -17,10 +16,7 @@ class HomepageMenuScreen extends StatelessWidget {
           ),
           body: Column(
             children: [
-              Container(
-                decoration: BoxDecoration(color: Colors.red),
-                child: Text("hello 1"),
-              )
+              
             ],
           ),
         );

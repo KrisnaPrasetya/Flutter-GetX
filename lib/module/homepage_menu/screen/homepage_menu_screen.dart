@@ -1,0 +1,38 @@
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import '../controller/homepage_menu_controller.dart';
+
+class HomepageMenuScreen extends StatelessWidget {
+  const HomepageMenuScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return GetBuilder<HomepageMenuController>(
+      init: HomepageMenuController(),
+      builder: (controller) {
+        return Scaffold(
+          appBar: AppBar(
+            title: const Text('Homepage Menu'),
+          ),
+          body: Column(
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  controller.gotoGetTest();
+                },
+                child: const Text('Get Test'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  controller.gotoPostTest();
+                },
+                child: const Text('Post Test'),
+              ),
+            ],
+          ),
+        );
+      },
+    );
+  }
+}
